@@ -43,6 +43,6 @@ The run_analysis.R script performs the data preparation and then followed by the
         All start with character t in column’s name replaced by Time
 
     From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
-        Final_Tidy_Data (180 rows, 88 columns) is created by sumarizing TidyData taking the means of each variable for each activity and each subject, after groupped by subject and activity.
+        Final_Tidy_Data (180 rows, 82 columns) is created by sumarizing TidyData taking the means of each variable for each activity and each subject, after groupped by subject and activity.
         Export Final_Tidy_Data into Tidy_data.txt file.
 
