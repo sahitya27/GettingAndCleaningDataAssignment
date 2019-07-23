@@ -28,19 +28,10 @@ The run_analysis.R script performs the data preparation and then followed by the
         merge_train_test (10299 rows, 563 column) is created by merging Subject, merge_train and merge_test using rbind() function
 
     Extracts only the measurements on the mean and standard deviation for each measurement
-        dataset_true_MeanAndStd (10299 rows, 81 columns) is created by subsetting merge_train_test
+        dataset_true_MeanAndStd (10299 rows, 82 columns) is created by subsetting merge_train_test
 
     Uses descriptive activity names to name the activities in the data set
         Entire numbers in code column of the dataset_true_MeanAndStd replaced with corresponding activity taken from second column of the activities variable
-
-    Appropriately labels the data set with descriptive variable names
-        code column in TidyData renamed into activities
-        All Acc in column’s name replaced by Accelerometer
-        All Gyro in column’s name replaced by Gyroscope
-        All BodyBody in column’s name replaced by Body
-        All Mag in column’s name replaced by Magnitude
-        All start with character f in column’s name replaced by Frequency
-        All start with character t in column’s name replaced by Time
 
     From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
         Final_Tidy_Data (180 rows, 82 columns) is created by sumarizing TidyData taking the means of each variable for each activity and each subject, after groupped by subject and activity.
